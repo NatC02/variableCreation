@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <link rel="stylesheet" href="/javascriptFile.css">
-</head>
-
     <body>
 
-        <div class="form-group">
-            <label for="stock"> We are selling RTX cards!!</label>
-            <select id="itemOptions">
-                <option selected>Pick a graphics card</option>
-                <option value="rtx 3060">RTX 3060</option>
-                <option value="rtx 3070">RTX 3070</option>
-                <option value="rtx 3080">RTX 3080</option>
-                <option value="rtx 3090">RTX 3090</option>
-            </select>
-        </div>
+        <form id="dangScalpers">
+            which rtx series card?: <input type="text" name="rtxName" value=""><br>
+            which gpu to buy?: <input type="text" name="lname" value=""><br>
+        </form>
+
+        <button id="submitBtn">Get yours today </button>
+
+        <input type="text" id="myInput" />
+
 
         <script> 
         
-        const dropDown = document.getElementById("itemOptions");
+
+        
+        document.getElementById('submitBtn').onclick = function() {
+        alert("this is out of stock");
+    }
+
+        input.addEventListener('keyup', function (e) {
+        console.log('Value:', input.value);
+    });
+
+        const rtxQuestion = document.getElementsByName("rtxName");
+
+        let input = document.querySelector(dangScalpers);
 
         let stock = ['rtx 3060','rtx 3070', 'rtx 3080','rtx 3090'];
 
         
-        function cardSeclection(stock) {
-            if (stock == )
-        }
-
-        if (stock == div.stock) {
-            alert("This is out of stock")
-        }
 
         </script>
     </body>
