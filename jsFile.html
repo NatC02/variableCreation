@@ -4,34 +4,25 @@
     <body>
 
         <form id="dangScalpers">
-            which rtx series card?: <input type="text" name="rtxName" value=""><br>
-            which gpu to buy?: <input type="text" name="lname" value=""><br>
+            which RTX series card?: <input id="inputRTX" type="text" name="rtxName" value=""><br>
+            which GPU to buy?: <input id="inputGPU" type="text" name="rtxGPU" value=""><br>
         </form>
 
-        <button id="submitBtn">Get yours today </button>
+        <script>
 
-        <input type="text" id="myInput" />
+        const btn = document.createElement("BUTTON");   // Create a <button> element on html
+        btn.innerHTML = "Get yours today";              // text
+        document.body.appendChild(btn);
 
+        const dontClickBtn = document.createElement("BUTTON");
+        dontClickBtn.innerHTML = "Don't click here";
+        document.body.appendChild(dontClickBtn);
 
-        <script> 
-        
+        document.write("\n");
 
-        
-        document.getElementById('submitBtn').onclick = function() {
+        btn.onclick = function() {
         alert("this is out of stock");
     }
-
-        input.addEventListener('keyup', function (e) {
-        console.log('Value:', input.value);
-    });
-
-        const rtxQuestion = document.getElementsByName("rtxName");
-
-        let input = document.querySelector(dangScalpers);
-
-        let stock = ['rtx 3060','rtx 3070', 'rtx 3080','rtx 3090'];
-
-        
 
         </script>
     </body>
