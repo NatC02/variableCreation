@@ -29,9 +29,11 @@
     //the ones below are pretty good tbh, although i have no clue why the heck one image doesnt show. 
     //and its genuinely bothering. eitherway i went to sleep
 
+    //Had to wake up and place down let instead
+
     dontClickBtn.onclick = function() {
-            var myImages = new Array("/images/angular.png", "/images/smiles.png", "/images/file.png");
-            var randomNum = Math.floor(Math.random() * myImages.length);
+            let myImages = new Array("/images/angular.png", "/images/smiles.png", "/images/file.png");
+            let randomNum = Math.floor(Math.random() * myImages.length);
             document.getElementById("myImages").src = myImages[randomNum];
     }
 
