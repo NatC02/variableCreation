@@ -44,8 +44,8 @@
     // And the forces of evil
 
     dontClickBtn.onclick = function() {
-            let myImages = new Array("/images/angular.png", "/images/smiles.png", "/images/file.png");
-            let randomNum = Math.floor(Math.random() * myImages.length);
+            let myImages = ["/images/angular.png", "/images/smiles.png", "/images/file.png"];
+            const randomNum = Math.floor(Math.random() * myImages.length);
             document.getElementById("myImages").src = myImages[randomNum];
     }
 
