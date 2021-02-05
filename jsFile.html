@@ -8,6 +8,10 @@
             which GPU to buy?: <input id="inputGPU" type="text" name="rtxGPU" value=""><br>
         </form>
 
+        <br>
+
+        <img src="/images/no.png" width="305" height="312" id="myImages" alt="some image">
+
         <script>
 
         const btn = document.createElement("BUTTON");   // Create a <button> element on html
@@ -18,10 +22,14 @@
         dontClickBtn.innerHTML = "Don't click here";
         document.body.appendChild(dontClickBtn);
 
-        document.write("\n");
-
         btn.onclick = function() {
         alert("this is out of stock");
+    }
+
+    dontClickBtn.onclick = function() {
+            var myImages = new Array("/images/angular.png", "/images/file.png", "/images/smiles.png");
+            var randomNum = Math.floor(Math.random() * myImages.length);
+            document.getElementById("myImages").src = myImages[randomNum];
     }
 
         </script>
