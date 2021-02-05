@@ -26,8 +26,11 @@
         alert("this is out of stock");
     }
 
+    //the ones below are pretty good tbh, although i have no clue why the heck one image doesnt show. 
+    //and its genuinely bothering. eitherway i went to sleep
+
     dontClickBtn.onclick = function() {
-            var myImages = new Array("/images/angular.png", "/images/file.png", "/images/smiles.png");
+            var myImages = new Array("/images/angular.png", "/images/smiles.png", "/images/file.png");
             var randomNum = Math.floor(Math.random() * myImages.length);
             document.getElementById("myImages").src = myImages[randomNum];
     }
